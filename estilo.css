@@ -1,0 +1,29 @@
+
+/* estilo do todo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(173, 173, 173);
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* estilo do cabeçalho */
+
+header{
+   padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
