@@ -1,0 +1,138 @@
+/* estilo do todo */
+@import url(variaveis.css);
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anybody', sans-serif;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+.interface {
+    max-width: 1280px;
+    /* largura máxima da janela*/
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+@media screen and (max-width: 768px){
+    .menu ul{
+        flex-direction: column;
+    }
+    .contato{
+        margin-bottom: 10px;
+        font-size: large;
+
+        
+    }
+
+    .section{
+        text-align: center;
+    }
+}
+
+
+
+/* estilo do cabeçalho */
+
+header {
+    padding: 15px 4%;
+}
+
+header>.interface {
+    /* display flex*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a {
+    color: #7d7d7d;
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+header .contato button {
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    border: 0;
+    cursor: pointer;
+
+}
+
+header .contato button:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px rgba(255, 255, 255, 0.273);
+}
+
+/*estilo capa*/
+.capa {
+    background-image: url(../img/v.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.txt {
+    padding: 300px 0%;
+    align-items: center;
+    justify-content: center;
+    color: #7d7d7d;
+
+}
+
+.capa h1 {
+
+    line-height: 33px;
+    font-size: 38px;
+    font-weight: 300;
+    font-family: "Lexend Zetta", sans-serif;
+}
+
+.capa p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+
+/*projetos desenvolvidos*/
+
+.projeto-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.projeto-item {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px rgb(29, 29, 29);
+
+}
